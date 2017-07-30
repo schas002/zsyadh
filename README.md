@@ -4,7 +4,19 @@
 
 > A dialect based on the Racket syntax.
 
-Coming soon...
+## Install
+
+Zsyadh is a `#lang s-exp` language, meaning you'll have to copy it to the module path.
+
+## Usage
+
+```
+#lang s-exp "zsyadh.rkt"
+```
+
+## Documentation
+
+[docs/README.md](docs/README.md)
 
 ## Maintainer
 
