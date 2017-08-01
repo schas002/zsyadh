@@ -25,17 +25,24 @@
 	; Builtins provided from Racket
 	define if and or cond lambda let let* list length list-ref append reverse
 	member map andmap ormap filter foldl cons car cdr quote equal? list? null?
-	caar cadr cdar cddr symbol? not bitwise-not void
+	caar cadr cdar cddr symbol? not bitwise-not void * / modulo
 	; Aliases to builtins provided from Racket
 	(rename-out
 		[not !]
-		[bitwise-not ~])
+		[bitwise-not ~]
+		[* times]
+		[* multiply]
+		[* mul]
+		[/ divide]
+		[/ div]
+		[modulo mod]
+		[modulo %])
 	; Builtins of our own creation
 	increment decrement typeof
 	; Aliases to builtins of our own creation
 	(rename-out
-		[inc increment]
-		[++ increment]
-		[dec decrement]
-		[-- decrement]
-		[type typeof]))
+		[increment inc]
+		[increment ++]
+		[decrement dec]
+		[decrement --]
+		[typeof type]))

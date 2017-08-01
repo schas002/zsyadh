@@ -2,7 +2,7 @@
 
 ## Builtins provided from Racket
 
-The following thirty four builtins are provisioned from Racket:
+The following thirty seven builtins are provisioned from Racket:
 
 ```
 and         andmap      append      bitwise-not car
@@ -10,18 +10,22 @@ caar        cadr        cdr         cdar        cddr
 cond        cons        define      equal?      filter
 foldl       if          lambda      length      let
 let*        list        list?       list-ref    map
-member      not         null?       or          ormap
-quote       reverse     symbol?     void
+member      modulo      not         null?       or
+ormap       quote       reverse     symbol?     void
+*           /
 ```
 
 ### Aliases
 
-There are two aliases to some of these builtins:
+There are nine aliases to some of these builtins:
 
 | Original      | Aliases                                      |
 |:--------------|---------------------------------------------:|
 | `bitwise-not` | `~`                                          |
 | `not`         | `!`                                          |
+| `modulo`      | `mod` `%`                                    |
+| `*`           | `times` `multiply` `mul`                     |
+| `/`           | `divide` `div`                               |
 
 ## New builtins in Zsyadh
 
